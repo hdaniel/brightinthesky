@@ -53,7 +53,7 @@ class Astro(object):
         self.capella_observations()
         self.rigel_observations()
 
-    # it is necessary to trap errors since rising and setting functions raise execptions if the body does not to cross the horizon
+    # it is necessary to trap errors since rising and setting functions raise exceptions if the body does not to cross the horizon
     # see: http://rhodesmill.org/pyephem/quick.html#transit-rising-setting
     def sun_observations(self, extra_args={}):
         self.observed_location.horizon = standard_horizon()
