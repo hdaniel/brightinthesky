@@ -3,4 +3,5 @@
 *.swp
 *.un~
 .*.swo
-wsgi/web2py/applications/sr_astronomy/errors/*
+errors/*
+databases/*
