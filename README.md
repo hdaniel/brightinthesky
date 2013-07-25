@@ -1,11 +1,13 @@
 brightinthesky
 ==============
 
-A web2py api using PyEphem for bright astronomical bodies.
+An api running on [web2py](http://web2py.com/) that uses [PyEphem](http://rhodesmill.org/pyephem/index.html) to return information for the brightest astronomical bodies in the sky for a given time and location.
 
-This is a web2py application that puts a web api front end on PyEphem to get data on the brightest bodies in the sky for a given time and location.
+Pass latitude, longitude, and date/time to get a JSON or XML result containing rise/set times, transit times, altitude, azimuth, and magnitude for the Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Sirius, Arcturus, Vega, Capella, and Rigel.
 
-Pass latitude, longitude, and date/time to get a JSON or XML result containing rise/set times, transit times, altitude, azimuth, and magnitude (except for the Sun) for the Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Sirius, Arcturus, Vega, Capella, and Rigel.
+Returns values for Naval Observatory sunrise and sunset times, as well as civil and astronomical twilight.  All date/times are passed and returned in ISO 8601 format in UTC.
+
+See the [documentation for PyEphem](http://rhodesmill.org/pyephem/index.html) for more information about the values returned.
 
 Example XML call and result:
 
