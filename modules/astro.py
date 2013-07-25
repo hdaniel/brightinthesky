@@ -141,21 +141,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         venus = ephem.Venus()
         try:
-            self.observations["previous_venusrise"] = to_date_time(self.observed_location.previous_rising(venus))
+            self.observations["previous_venus_rise"] = to_date_time(self.observed_location.previous_rising(venus))
         except Exception, e:
-            self.observations["previous_venusrise"] = ""
+            self.observations["previous_venus_rise"] = ""
         try:
-            self.observations["next_venusrise"] = to_date_time(self.observed_location.next_rising(venus))
+            self.observations["next_venus_rise"] = to_date_time(self.observed_location.next_rising(venus))
         except Exception, e:
-            self.observations["next_venusrise"] = ""
+            self.observations["next_venus_rise"] = ""
         try:
-            self.observations["previous_venusset"] = to_date_time(self.observed_location.previous_setting(venus))
+            self.observations["previous_venus_set"] = to_date_time(self.observed_location.previous_setting(venus))
         except Exception, e:
-            self.observations["previous_venusset"] = ""
+            self.observations["previous_venus_set"] = ""
         try:
-            self.observations["next_venusset"] = to_date_time(self.observed_location.next_setting(venus))
+            self.observations["next_venus_set"] = to_date_time(self.observed_location.next_setting(venus))
         except Exception, e:
-            self.observations["next_venusset"] = ""
+            self.observations["next_venus_set"] = ""
         self.observations["previous_venus_transit"] = to_date_time(self.observed_location.previous_transit(venus))
         self.observations["next_venus_transit"] = to_date_time(self.observed_location.next_transit(venus))
         venus.compute(self.observed_location)
@@ -167,21 +167,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         jupiter = ephem.Jupiter()
         try:
-            self.observations["previous_jupiterrise"] = to_date_time(self.observed_location.previous_rising(jupiter))
+            self.observations["previous_jupiter_rise"] = to_date_time(self.observed_location.previous_rising(jupiter))
         except Exception, e:
-            self.observations["previous_jupiterrise"] = ""
+            self.observations["previous_jupiter_rise"] = ""
         try:
-            self.observations["next_jupiterrise"] = to_date_time(self.observed_location.next_rising(jupiter))
+            self.observations["next_jupiter_rise"] = to_date_time(self.observed_location.next_rising(jupiter))
         except Exception, e:
-            self.observations["next_jupiterrise"] = ""
+            self.observations["next_jupiter_rise"] = ""
         try:
-            self.observations["previous_jupiterset"] = to_date_time(self.observed_location.previous_setting(jupiter))
+            self.observations["previous_jupiter_set"] = to_date_time(self.observed_location.previous_setting(jupiter))
         except Exception, e:
-            self.observations["previous_jupiterset"] = ""
+            self.observations["previous_jupiter_set"] = ""
         try:
-            self.observations["next_jupiterset"] = to_date_time(self.observed_location.next_setting(jupiter))
+            self.observations["next_jupiter_set"] = to_date_time(self.observed_location.next_setting(jupiter))
         except Exception, e:
-            self.observations["next_jupiterset"] = ""
+            self.observations["next_jupiter_set"] = ""
         self.observations["previous_jupiter_transit"] = to_date_time(self.observed_location.previous_transit(jupiter))
         self.observations["next_jupiter_transit"] = to_date_time(self.observed_location.next_transit(jupiter))
         jupiter.compute(self.observed_location)
@@ -193,21 +193,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         mars = ephem.Mars()
         try:
-            self.observations["previous_marsrise"] = to_date_time(self.observed_location.previous_rising(mars))
+            self.observations["previous_mars_rise"] = to_date_time(self.observed_location.previous_rising(mars))
         except Exception, e:
-            self.observations["previous_marsrise"] = ""
+            self.observations["previous_mars_rise"] = ""
         try:
-            self.observations["next_marsrise"] = to_date_time(self.observed_location.next_rising(mars))
+            self.observations["next_mars_rise"] = to_date_time(self.observed_location.next_rising(mars))
         except Exception, e:
-            self.observations["next_marsrise"] = ""
+            self.observations["next_mars_rise"] = ""
         try:
-            self.observations["previous_marsset"] = to_date_time(self.observed_location.previous_setting(mars))
+            self.observations["previous_mars_set"] = to_date_time(self.observed_location.previous_setting(mars))
         except Exception, e:
-            self.observations["previous_marsset"] = ""
+            self.observations["previous_mars_set"] = ""
         try:
-            self.observations["next_marsset"] = to_date_time(self.observed_location.next_setting(mars))
+            self.observations["next_mars_set"] = to_date_time(self.observed_location.next_setting(mars))
         except Exception, e:
-            self.observations["next_marsset"] = ""
+            self.observations["next_mars_set"] = ""
         self.observations["previous_mars_transit"] = to_date_time(self.observed_location.previous_transit(mars))
         self.observations["next_mars_transit"] = to_date_time(self.observed_location.next_transit(mars))
         mars.compute(self.observed_location)
@@ -219,21 +219,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         saturn = ephem.Saturn()
         try:
-            self.observations["previous_saturnrise"] = to_date_time(self.observed_location.previous_rising(saturn))
+            self.observations["previous_saturn_rise"] = to_date_time(self.observed_location.previous_rising(saturn))
         except Exception, e:
-            self.observations["previous_saturnrise"] = ""
+            self.observations["previous_saturn_rise"] = ""
         try:
-            self.observations["next_saturnrise"] = to_date_time(self.observed_location.next_rising(saturn))
+            self.observations["next_saturn_rise"] = to_date_time(self.observed_location.next_rising(saturn))
         except Exception, e:
-            self.observations["next_saturnrise"] = ""
+            self.observations["next_saturn_rise"] = ""
         try:
-            self.observations["previous_saturnset"] = to_date_time(self.observed_location.previous_setting(saturn))
+            self.observations["previous_saturn_set"] = to_date_time(self.observed_location.previous_setting(saturn))
         except Exception, e:
-            self.observations["previous_saturnset"] = ""
+            self.observations["previous_saturn_set"] = ""
         try:
-            self.observations["next_saturnset"] = to_date_time(self.observed_location.next_setting(saturn))
+            self.observations["next_saturn_set"] = to_date_time(self.observed_location.next_setting(saturn))
         except Exception, e:
-            self.observations["next_saturnset"] = ""
+            self.observations["next_saturn_set"] = ""
         self.observations["previous_saturn_transit"] = to_date_time(self.observed_location.previous_transit(saturn))
         self.observations["next_saturn_transit"] = to_date_time(self.observed_location.next_transit(saturn))
         saturn.compute(self.observed_location)
@@ -245,21 +245,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         mercury = ephem.Mercury()
         try:
-            self.observations["previous_mercuryrise"] = to_date_time(self.observed_location.previous_rising(mercury))
+            self.observations["previous_mercury_rise"] = to_date_time(self.observed_location.previous_rising(mercury))
         except Exception, e:
-            self.observations["previous_mercuryrise"] = ""
+            self.observations["previous_mercury_rise"] = ""
         try:
-            self.observations["next_mercuryrise"] = to_date_time(self.observed_location.next_rising(mercury))
+            self.observations["next_mercury_rise"] = to_date_time(self.observed_location.next_rising(mercury))
         except Exception, e:
-            self.observations["next_mercuryrise"] = ""
+            self.observations["next_mercury_rise"] = ""
         try:
-           self.observations["previous_mercuryset"] = to_date_time(self.observed_location.previous_setting(mercury))
+           self.observations["previous_mercury_set"] = to_date_time(self.observed_location.previous_setting(mercury))
         except Exception, e:
-           self.observations["previous_mercuryset"] = ""
+           self.observations["previous_mercury_set"] = ""
         try:
-           self.observations["next_mercuryset"] = to_date_time(self.observed_location.next_setting(mercury))
+           self.observations["next_mercury_set"] = to_date_time(self.observed_location.next_setting(mercury))
         except Exception, e:
-           self.observations["next_mercuryset"] = ""
+           self.observations["next_mercury_set"] = ""
         self.observations["previous_mercury_transit"] = to_date_time(self.observed_location.previous_transit(mercury))
         self.observations["next_mercury_transit"] = to_date_time(self.observed_location.next_transit(mercury))
         mercury.compute(self.observed_location)
@@ -271,21 +271,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         sirius = ephem.star('Sirius')
         try:
-            self.observations["previous_siriusrise"] = to_date_time(self.observed_location.previous_rising(sirius))
+            self.observations["previous_sirius_rise"] = to_date_time(self.observed_location.previous_rising(sirius))
         except Exception, e:
-            self.observations["previous_siriusrise"] = ""
+            self.observations["previous_sirius_rise"] = ""
         try:
-           self.observations["next_siriusrise"] = to_date_time(self.observed_location.next_rising(sirius))
+           self.observations["next_sirius_rise"] = to_date_time(self.observed_location.next_rising(sirius))
         except Exception, e:
-           self.observations["next_siriusrise"] = ""
+           self.observations["next_sirius_rise"] = ""
         try:
-           self.observations["previous_siriusset"] = to_date_time(self.observed_location.previous_setting(sirius))
+           self.observations["previous_sirius_set"] = to_date_time(self.observed_location.previous_setting(sirius))
         except Exception, e:
-           self.observations["previous_siriusset"] = ""
+           self.observations["previous_sirius_set"] = ""
         try:
-           self.observations["next_siriusset"] = to_date_time(self.observed_location.next_setting(sirius))
+           self.observations["next_sirius_set"] = to_date_time(self.observed_location.next_setting(sirius))
         except Exception, e:
-           self.observations["next_siriusset"] = ""
+           self.observations["next_sirius_set"] = ""
         self.observations["previous_sirius_transit"] = to_date_time(self.observed_location.previous_transit(sirius))
         self.observations["next_sirius_transit"] = to_date_time(self.observed_location.next_transit(sirius))
         sirius.compute(self.observed_location)
@@ -297,21 +297,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         arcturus = ephem.star('Arcturus')
         try:
-            self.observations["previous_arcturusrise"] = to_date_time(self.observed_location.previous_rising(arcturus))
+            self.observations["previous_arcturus_rise"] = to_date_time(self.observed_location.previous_rising(arcturus))
         except Exception, e:
-            self.observations["previous_arcturusrise"] = ""
+            self.observations["previous_arcturus_rise"] = ""
         try:
-           self.observations["next_arcturusrise"] = to_date_time(self.observed_location.next_rising(arcturus))
+           self.observations["next_arcturus_rise"] = to_date_time(self.observed_location.next_rising(arcturus))
         except Exception, e:
-           self.observations["next_arcturusrise"] = ""
+           self.observations["next_arcturus_rise"] = ""
         try:
-           self.observations["previous_arcturusset"] = to_date_time(self.observed_location.previous_setting(arcturus))
+           self.observations["previous_arcturus_set"] = to_date_time(self.observed_location.previous_setting(arcturus))
         except Exception, e:
-           self.observations["previous_arcturusset"] = ""
+           self.observations["previous_arcturus_set"] = ""
         try:
-           self.observations["next_arcturusset"] = to_date_time(self.observed_location.next_setting(arcturus))
+           self.observations["next_arcturus_set"] = to_date_time(self.observed_location.next_setting(arcturus))
         except Exception, e:
-           self.observations["next_arcturusset"] = ""
+           self.observations["next_arcturus_set"] = ""
         self.observations["previous_arcturus_transit"] = to_date_time(self.observed_location.previous_transit(arcturus))
         self.observations["next_arcturus_transit"] = to_date_time(self.observed_location.next_transit(arcturus))
         arcturus.compute(self.observed_location)
@@ -323,21 +323,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         vega = ephem.star('Vega')
         try:
-            self.observations["previous_vegarise"] = to_date_time(self.observed_location.previous_rising(vega))
+            self.observations["previous_vega_rise"] = to_date_time(self.observed_location.previous_rising(vega))
         except Exception, e:
-            self.observations["previous_vegarise"] = ""
+            self.observations["previous_vega_rise"] = ""
         try:
-           self.observations["next_vegarise"] = to_date_time(self.observed_location.next_rising(vega))
+           self.observations["next_vega_rise"] = to_date_time(self.observed_location.next_rising(vega))
         except Exception, e:
-           self.observations["next_vegarise"] = ""
+           self.observations["next_vega_rise"] = ""
         try:
-           self.observations["previous_vegaset"] = to_date_time(self.observed_location.previous_setting(vega))
+           self.observations["previous_vega_set"] = to_date_time(self.observed_location.previous_setting(vega))
         except Exception, e:
-           self.observations["previous_vegaset"] = ""
+           self.observations["previous_vega_set"] = ""
         try:
-           self.observations["next_vegaset"] = to_date_time(self.observed_location.next_setting(vega))
+           self.observations["next_vega_set"] = to_date_time(self.observed_location.next_setting(vega))
         except Exception, e:
-           self.observations["next_vegaset"] = ""
+           self.observations["next_vega_set"] = ""
         self.observations["previous_vega_transit"] = to_date_time(self.observed_location.previous_transit(vega))
         self.observations["next_vega_transit"] = to_date_time(self.observed_location.next_transit(vega))
         vega.compute(self.observed_location)
@@ -349,21 +349,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         capella = ephem.star('Capella')
         try:
-            self.observations["previous_capellarise"] = to_date_time(self.observed_location.previous_rising(capella))
+            self.observations["previous_capella_rise"] = to_date_time(self.observed_location.previous_rising(capella))
         except Exception, e:
-            self.observations["previous_capellarise"] = ""
+            self.observations["previous_capella_rise"] = ""
         try:
-            self.observations["next_capellarise"] = to_date_time(self.observed_location.next_rising(capella))
+            self.observations["next_capella_rise"] = to_date_time(self.observed_location.next_rising(capella))
         except Exception, e:
-            self.observations["next_capellarise"] = ""
+            self.observations["next_capella_rise"] = ""
         try:
-            self.observations["previous_capellaset"] = to_date_time(self.observed_location.previous_setting(capella))
+            self.observations["previous_capella_set"] = to_date_time(self.observed_location.previous_setting(capella))
         except Exception, e:
-            self.observations["previous_capellaset"] = ""
+            self.observations["previous_capella_set"] = ""
         try:
-            self.observations["next_capellaset"] = to_date_time(self.observed_location.next_setting(capella))
+            self.observations["next_capella_set"] = to_date_time(self.observed_location.next_setting(capella))
         except Exception, e:
-            self.observations["next_capellaset"] = ""
+            self.observations["next_capella_set"] = ""
         self.observations["previous_capella_transit"] = to_date_time(self.observed_location.previous_transit(capella))
         self.observations["next_capella_transit"] = to_date_time(self.observed_location.next_transit(capella))
         capella.compute(self.observed_location)
@@ -375,21 +375,21 @@ class Astro(object):
         self.observed_location.horizon = standard_horizon()
         rigel = ephem.star('Rigel')
         try:
-            self.observations["previous_rigelrise"] = to_date_time(self.observed_location.previous_rising(rigel))
+            self.observations["previous_rigel_rise"] = to_date_time(self.observed_location.previous_rising(rigel))
         except Exception, e:
-            self.observations["previous_rigelrise"] = ""
+            self.observations["previous_rigel_rise"] = ""
         try:
-            self.observations["next_rigelrise"] = to_date_time(self.observed_location.next_rising(rigel))
+            self.observations["next_rigel_rise"] = to_date_time(self.observed_location.next_rising(rigel))
         except Exception, e:
-            self.observations["next_rigelrise"] = ""
+            self.observations["next_rigel_rise"] = ""
         try:
-            self.observations["previous_rigelset"] = to_date_time(self.observed_location.previous_setting(rigel))
+            self.observations["previous_rigel_set"] = to_date_time(self.observed_location.previous_setting(rigel))
         except Exception, e:
-            self.observations["previous_rigelset"] = ""
+            self.observations["previous_rigel_set"] = ""
         try:
-            self.observations["next_rigelset"] = to_date_time(self.observed_location.next_setting(rigel))
+            self.observations["next_rigel_set"] = to_date_time(self.observed_location.next_setting(rigel))
         except Exception, e:
-            self.observations["next_rigelset"] = ""
+            self.observations["next_rigel_set"] = ""
         self.observations["previous_rigel_transit"] = to_date_time(self.observed_location.previous_transit(rigel))
         self.observations["next_rigel_transit"] = to_date_time(self.observed_location.next_transit(rigel))
         rigel.compute(self.observed_location)
